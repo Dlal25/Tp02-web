@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>GPA Calculator</title>
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </head>
 
 <body>
@@ -16,7 +16,6 @@
 <div id="courses">
 
 <div class="course-row">
-
 <label>Course:</label>
 <input type="text" name="course[]" placeholder="e.g. Mathematics" required>
 
@@ -33,12 +32,10 @@
 </select>
 
 </div>
+
 </div>
 
-<button type="button" onclick="addCourse()">
-+ Add Course
-</button>
-
+<button type="button" onclick="addCourse()">+ Add Course</button>
 <br><br>
 
 <input type="submit" value="Calculate GPA">
